@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital@1&family=Yanone+Kaffeesatz&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Yanone Kaffeesatz', Helvetica, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+h1 {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    background-color: khaki;
+    border: 2px solid black;
+    color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(400%);
+    transition: transform o.4s ease;
+}
+
+.box:nth-of-type(even){ 
+    transform: translateX(-400%); /* the boxes with index even are on the left at -400% */
+}
+/*The :nth-of-type() pseudo-class represents an element that has an+b siblings with the same 
+expanded element name before it in the document tree, 
+for any zero or positive integer value of n, and has a parent element. 
+
+The examples of an+b are as follows:
+:nth-of-type(2n) or :nth-of-type(even) represents every even elements that has the same expanded element name 
+:nth-of-type(2n+1) or :nth-of-type(odd) represents every odd elements that has the same expanded element name 
+:nth-of-type(10n-1)  represents the 9th, 19th, 29th, etc, elements that has the same expanded element name */
+
+.box.show {
+    transform: translateX(0);
+}
+
+.box h2 {
+    font-size: 42px;
+}
