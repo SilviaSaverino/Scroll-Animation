@@ -44,14 +44,14 @@ h1 {
 
 .box:nth-of-type(even){ 
     transform: translateX(-400%); /* the boxes with index even are on the left at -400% */
-    background-image: url("/workspace/Scroll-Animation/assets/images/popArtPizza.png");
+    background-image: url("/Scroll-Animation/assets/images/popArtPizza.png");
     background-repeat: no-repeat;
     background-size: contain;
 
 }
 
 .box:nth-of-type(odd){
-    background-image: url("/workspace/Scroll-Animation/assets/images/popArtPss.png");
+    background-image: url("/Scroll-Animation/assets/images/popArtPss.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 259px;
